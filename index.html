@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Carusel</title>
+		
+		<link href="styles/style.css" rel="stylesheet" type="text/css"/>
+		<link href="styles/nivo-slider.css" rel="stylesheet" type="text/css" media="all"/>
+		<link href="styles/custom.css" rel="stylesheet" type="text/css"/>
+		
+		<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('#slider').nivoSlider(
+					{
+						effect: 'fold',
+						animSpeed: 500, // Slide transition speed
+						pauseTime: 5000 // How long each slide willshow
+					});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="block1">
+				<div class="info_block" id="red_info">
+					<h1>Browse!</h1>
+					<p>Browse the stores you love without having to worry about which card to pay with. Use your Prime Card without a second thought.
+Simple & Quick</p>
+					<a href="">Get a Prime Card Now</a>
+				</div>
+			</div>
+			<div class="block2">
+				<div class="info_block" id="green_info">
+					<h1>Play!</h1>
+					<p>Worried about not controlling your spend while engaged in a game? Use your Prime Card, it gives you freedom without overspending! Safe & In-Control</p>
+					<a href="">Get a Prime Card Now</a>
+				</div>
+			</div>
+			<div class="block3">
+				<div class="info_block" id="blue_info">
+					<h1>Spend!</h1>
+					<p>Found something you want to buy? Purchase it with your Prime Card and enjoy your newly bought item! Easy & Secure</p>
+					<a href="">Get a Prime Card Now</a>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="slider-wrapper theme-default">
+					<div id="slider" class="nivoSlider">
+						<a href="benefits_browse_play_spend.html"><img src="images/slide_img_1.jpg" alt="1. INCOGNITO: No forms, No identity checks, No credit history, No paper statements in the post, No personal details on the card." /></a>
+						<a href="instantly_accepted.html"><img src="images/slide_img_2.jpg" alt="2. INSTANTLY YOURS: No links to your bank account, No forms, No identity checks, No paper statements in the post." /></a>
+						<a href="clever_with_money.html"><img src="images/slide_img_3.jpg" alt="3. CLEVER WITH MONEY: Handy tools make it perfect for budgeting, Great for saving up for something special, Pre-paid means you never pay interest." /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
